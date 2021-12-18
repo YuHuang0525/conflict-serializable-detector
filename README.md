@@ -11,12 +11,11 @@ eventually we check whether we can convert the original schedule into a serial s
 Either way is time-consuming, and thus through the script the algorithm could actually test for you, giving you the conclusion of whether the input series of schedules
 are conflict-serializable or not.
 
-The script utilizes linkedlist data structure. It applies regular expression to extract different transactions, then construct a linkedlist and detect whether there is a loop along time.
+The script applies a self-defined Graph class as data structure. It applies regular expression to extract different transactions, then construct a Graph and detect whether there is a loop.
 
 # To use the script, just git clone the whole directory, cd into the directoy, and then call "python conflict-serializable.py" in the terminal.
 
 It takes the input and then return the decision from the algorithm. 
-# Note that the input schedules are case-sensitive.
 
 Demo:
 ![image](https://user-images.githubusercontent.com/94572804/144966736-a28b5eb3-bb9f-4e47-8e50-a517f9067ef2.png)
