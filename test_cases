@@ -1,0 +1,10 @@
+Test cases example:
+
+#s = 'r1(A) r4(D) w3(C) r2(B) w2(A) r1(C) w3(B)' -- false
+#s = 'r2(A) r1(B) w2(A) r2(B) r3(A) w1(B) w3(A) w2(B)' -- false
+#s = 'r2(A) r1(B) w2(A) r3(A) w1(B) w3(A) r2(B) w2(B)' -- true
+#s = 'R1(A), W2(B), R3(C), W3(A), R3(D), R4(B), W4(D), W2(C)' -- true
+#s = 'r1(A)w1(A)r2(A)w2(A)r1(B)w1(B)r2(B)w2(B)' -- true
+
+#s = 'R1(A), W2(B), R3(C), W3(A), R4(D), R4(B), W1(D), W2(C)' -- false
+#s = 'R1(A), W2(B), R3(C), W3(A), R1(D), R4(B), W4(D), W2(C)' -- true
