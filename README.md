@@ -13,6 +13,8 @@ are conflict-serializable or not.
 
 The script applies a self-defined Graph class as data structure. It applies regular expression to extract different transactions, then construct a Graph and detect whether there is a loop.
 
+Depth First Traversal can be used to detect a cycle in a Graph. DFS for a connected graph produces a tree. There is a cycle in a graph only if there is a back edge, i.e an edge that is from a node to itself (self-loop) or one of its ancestors in the tree produced by DFS, present in the graph. To detect a back edge, keep track of vertices currently in the recursion stack of function for DFS traversal. If a vertex is reached that is already in the recursion stack, then there is a cycle in the tree. 
+
 # To use the script, just git clone the whole directory, cd into the directoy, and then call "python conflict-serializable.py" in the terminal.
 
 It takes the input and then return the decision from the algorithm. 
